@@ -2,6 +2,8 @@
 #include <pcap.h>        // 패킷 캡처 라이브러리
 #include <net/if.h>      // ifreq 구조체 //MAC주소 가져오기 위한 헤더 //struct ifreq 구조체 정의용
 #include <sys/ioctl.h>   // ioctl 함수 //디바이스 제어를 위한 시스템 콜 인터페이스
+#include <sys/socket.h>  // socket 함수 사용을 위한 헤더
+#include <string.h>      // strncpy 함수 사용을 위한 헤더
 #include <unistd.h>      // close 함수
 #include "ethhdr.h"      // Ethernet 헤더 구조체
 #include "arphdr.h"      // ARP 헤더 구조체
